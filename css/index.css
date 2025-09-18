@@ -1,0 +1,382 @@
+/*Shared Styles */
+:root {
+  --main-color: #0078ff;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #eeeeee;
+}
+/* Astrik / Universe Selector */
+
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+}
+
+/* Start Nav Bar */
+.nav-bar {
+  position: fixed;
+  z-index: 1;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452));
+}
+.nav-link {
+  color: white;
+}
+.nav-link:hover {
+  color: var(--main-color) !important;
+}
+/* End Nav Bar */
+/* Start Home Section */
+.home-section {
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.652)),
+    url("../images/hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.home-section h1 {
+  font-size: 64px;
+}
+.home-section p {
+  font-size: 34px;
+}
+
+/* End Home Section */
+/* Start ABOUT Section */
+.about-section .container .info .image ul li {
+  margin-top: 30px;
+}
+
+progress.bar {
+  width: 300px;
+  height: 20px;
+}
+
+.about-section .container .about-text .about-h {
+  position: relative;
+}
+.about-section .container .about-text .about-h::after {
+  position: absolute;
+  content: "";
+  background-color: var(--main-color);
+  width: 20%;
+  height: 5px;
+  left: 0;
+  top: 100%;
+}
+.skills p {
+  font-size: 24px;
+}
+/* End About Section */
+/* Start Services Section */
+.services-section .container .heading {
+  position: relative;
+}
+.services-section .container .heading::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  width: 5%;
+  height: 5px;
+  background-color: var(--main-color);
+  transform: translate(-50%, 50%);
+}
+.services-section .container .heading h1 {
+  font-size: 60px;
+}
+
+.services-section .container .covver .item .icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: 1s;
+  border: 5px solid var(--main-color);
+}
+.services-section .container .covver .item .icon:hover {
+  box-shadow: 0 0px 8px 10px var(--main-color);
+  background-color: var(--main-color);
+  color: white;
+  border: none;
+}
+/* End Services Section*/
+/* Start Analys Section*/
+.analys-section {
+  background-image: url("../images/overlay-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.analys-section .analys-background {
+  background-color: #0077ff71;
+}
+.analys-section .container .analys-items .icon {
+  width: 40px;
+  height: 40px;
+}
+.analys-section .container .analys-items .icon i {
+  font-size: 3rem;
+}
+.analys-section .container .analys-items p {
+  width: 200px;
+  text-align: center;
+}
+/* End Analys Section */
+/*  Start Protfolio Section*/
+.protfolio-section .container .protfolio {
+  position: relative;
+}
+.protfolio-section .container .protfolio::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  width: 5%;
+  height: 5px;
+  background-color: var(--main-color);
+  transform: translate(-50%, 50%);
+}
+.protfolio-section .container .protfolio h1 {
+  font-size: 60px;
+}
+
+.protfolio-section .container .protfolio-photos .photo1 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo2 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo3 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo4 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo5 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo6 .photo-des .but-des {
+  width: 50px;
+  height: 50px;
+}
+.protfolio-section .container .protfolio-photos .photo1 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo2 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo3 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo4 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo5 .photo-des .but-des,
+.protfolio-section
+  .container
+  .protfolio-photos
+  .photo6
+  .photo-des
+  .but-des
+  a
+  i {
+  font-size: 1.5em;
+}
+.protfolio-section .container .protfolio-photos .photo1 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo2 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo3 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo4 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo5 .photo-des .but-des,
+.protfolio-section .container .protfolio-photos .photo6 .photo-des .but-des a {
+  cursor: pointer;
+}
+
+.protfolio-section .container .protfolio-photos .photo1,
+.protfolio-section .container .protfolio-photos .photo2,
+.protfolio-section .container .protfolio-photos .photo3,
+.protfolio-section .container .protfolio-photos .photo4,
+.protfolio-section .container .protfolio-photos .photo5,
+.protfolio-section .container .protfolio-photos .photo6 {
+  box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+.protfolio-section .container .protfolio-photos .photo1 div img,
+.protfolio-section .container .protfolio-photos .photo2 div img,
+.protfolio-section .container .protfolio-photos .photo3 div img,
+.protfolio-section .container .protfolio-photos .photo4 div img,
+.protfolio-section .container .protfolio-photos .photo5 div img,
+.protfolio-section .container .protfolio-photos .photo6 div img {
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+  cursor: pointer;
+}
+.protfolio-section .container .protfolio-photos .photo1:hover div img,
+.protfolio-section .container .protfolio-photos .photo2:hover div img,
+.protfolio-section .container .protfolio-photos .photo3:hover div img,
+.protfolio-section .container .protfolio-photos .photo4:hover div img,
+.protfolio-section .container .protfolio-photos .photo5:hover div img,
+.protfolio-section .container .protfolio-photos .photo6:hover div img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+/* End Protfolio Section */
+/* Start Scroll Section */
+.scroll-section {
+  background-image: url("../images/overlay-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.scroll-section .over-background {
+  background-color: #0077ff71;
+  height: 100%;
+}
+
+/* End Scroll  Section */
+/* Start Blog Section */
+.blog-section .container .blog {
+  position: relative;
+}
+.blog-section .container .blog::after {
+  position: absolute;
+  content: "";
+  bottom: -15px;
+  left: 50%;
+  width: 5%;
+  height: 5px;
+  background-color: var(--main-color);
+  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, 50%);
+  -moz-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  -o-transform: translate(-50%, 50%);
+}
+.blog-section .container .blog-photos .blog-photo1 .photo-des span {
+  width: 5rem;
+  padding: 5px;
+  font-size: 0.8em;
+}
+.blog-section .container .blog-photos .blog-photo2 .photo-des span,
+.blog-section .container .blog-photos .blog-photo3 .photo-des span {
+  width: 7rem;
+  padding: 5px;
+  font-size: 0.8em;
+}
+.blog-section .container .blog-photos .blog-photo1 .photo-des .text-des a:hover,
+.blog-section .container .blog-photos .blog-photo2 .photo-des .text-des a:hover,
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo3
+  .photo-des
+  .text-des
+  a:hover {
+  color: var(--main-color) !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo1
+  .photo-des
+  .mini
+  .mini-photo
+  a,
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo2
+  .photo-des
+  .mini
+  .mini-photo
+  a,
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo3
+  .photo-des
+  .mini
+  .mini-photo
+  a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo1
+  .photo-des
+  .mini
+  .mini-photo
+  a:hover,
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo2
+  .photo-des
+  .mini
+  .mini-photo
+  a:hover,
+.blog-section
+  .container
+  .blog-photos
+  .blog-photo3
+  .photo-des
+  .mini
+  .mini-photo
+  a:hover {
+  color: var(--main-color) !important;
+}
+/* End Blog Section */
+/* Start Contact Section */
+.contact-section {
+  background-image: url("../images/overlay-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.contact-section input:focus,
+.contact-section textarea:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0px 0px 7px 2px var(--main-color);
+}
+.contact-section .over-background {
+  background-color: #0077ff71;
+  height: 100%;
+}
+.contact-section .over-background .container .contact .message h3,
+.contact-section .over-background .container .contact .contact-text h3 {
+  position: relative;
+}
+.contact-section .over-background .container .contact .message h3::before,
+.contact-section .over-background .container .contact .contact-text h3::before {
+  position: absolute;
+  content: "";
+  width: 20%;
+  height: 3px;
+  background-color: var(--main-color);
+  bottom: 0;
+}
+.contact-section .over-background .container .contact .contact-text .icons div {
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.contact-section
+  .over-background
+  .container
+  .contact
+  .contact-text
+  .icons
+  div:hover {
+  background-color: var(--main-color);
+  color: white;
+  cursor: pointer;
+}
+/* End Contact Section */
