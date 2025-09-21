@@ -33,6 +33,13 @@ ul {
 .nav-link:hover {
   color: var(--main-color) !important;
 }
+.nav-link:active {
+  color: var(--main-color) !important;
+}
+.navbar-nav .nav-link.active {
+  color: var(--main-color) !important;
+  border-bottom: 2px solid var(--main-color);
+}
 
 /* End Nav Bar */
 /* Start Home Section */
@@ -101,14 +108,18 @@ progress.bar {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  transition: 1s;
+  transition: 1s ease-in-out;
   border: 5px solid var(--main-color);
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -ms-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
 }
 .services-section .container .covver .item .icon:hover {
-  box-shadow: 0 0px 8px 10px var(--main-color);
+ 
   background-color: var(--main-color);
   color: white;
-  border: none;
+  border: transparent;
 }
 /* End Services Section*/
 /* Start Analys Section*/
@@ -231,7 +242,7 @@ progress.bar {
   background-color: #0077ff71;
   height: 100%;
 }
-.btn {
+.scroll-btn {
   width: 20px !important;
   height: 20px !important;
   border-radius: 50%;
